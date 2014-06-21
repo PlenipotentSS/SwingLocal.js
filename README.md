@@ -4,3 +4,4 @@ This is the Swing Local app using node.js framework. Using Haml files for the vi
 
 this is a test site to try out Node.js and test view templates.
 
+Currently using MongoDB, and using authentication with passport

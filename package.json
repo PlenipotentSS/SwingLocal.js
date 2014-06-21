@@ -1,12 +1,42 @@
 {
-  "name": "application-name",
+  "name": "SwingLocal",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node app.js"
   },
+  "repository" : {
+    "type" : "git",
+    "url" : "git@github.com:PlenipotentSS/SwingLocal.js.git"
+  },
+  "engines": {
+    "node": "0.10.24",
+    "npm":  "1.2.x"
+  },
   "dependencies": {
-    "express": "3.4.8",
-    "jade": "*"
+    "express": "3.4.x",
+    "jade": "latest",
+    "mongoose": "latest",
+    "connect-mongo": "latest",
+    "connect-flash": "latest",
+    "passport": "latest",
+    "passport-local": "latest",
+    "passport-facebook": "latest",
+    "passport-twitter": "latest",
+    "passport-github": "latest",
+    "passport-google-oauth": "latest",
+    "passport-linkedin": "latest",
+    "imager": "latest",
+    "winston": "latest",
+    "notifier": "latest",
+    "async": "latest",
+    "view-helpers": "latest",
+    "forever": "latest"
+  },
+  "devDependencies": {
+    "supertest": "latest",
+    "should": "latest",
+    "mocha": "latest",
+    "nodemon": "latest"
   }
 }
