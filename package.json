@@ -34,7 +34,7 @@
     "view-helpers": "latest",
     "forever": "latest",
     "node-sass": "latest",
-    "forever"
+    "forever" : "latest"
   },
   "devDependencies": {
     "supertest": "latest",
