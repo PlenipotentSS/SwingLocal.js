@@ -157,8 +157,10 @@ body {
  * Affix and center
  */
 
-@media only screen
-and (max-width: 420px ) {
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5),
+only screen and (max-width: 420px ) {
   .mastfoot,
   .dashboard-mastfoot {
     position: fixed;
@@ -226,8 +228,7 @@ and (min-width: 768px) {
   }
 }
 
-@media only screen
-and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .masthead-nav {
     min-width: 700px;
   }
