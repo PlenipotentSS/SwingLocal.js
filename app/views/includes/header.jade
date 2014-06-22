@@ -14,10 +14,10 @@ nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
         li.nav-item(class=isActive('/the-app'))
           a(href="/the-app", title="The App") The App
         - if (req.isAuthenticated())
-          li.nav-item(class=isActive('/dashboard'))
-            a(href="/dashboard/"+req.user.id+"/profile", title="Profile") Profile
+          //- li.nav-item(class=isActive('/dashboard'))
+          //-   a(href="/dashboard/"+req.user.id+"/profile", title="Profile") Profile
           li.nav-item
             a(href="/logout", title="logout") Logout
         - else
-          li.nav-item(class=isActive('/login') ? 'active' : '')
-            a(href="/login", title="Login") Login
+          //- li.nav-item(class=isActive('/login') ? 'active' : '')
+          //-   a(href="/login", title="Login") Login
