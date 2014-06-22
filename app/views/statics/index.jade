@@ -3,20 +3,27 @@ extends ../layouts/default
 block main
   .cover-container
     .hero-container
-      img(src="images/30H.jpg",style="max-width:100%;")
+      img(src="images/30H.jpg",class="hero-image")
       .overlay.cover
-        h1.cover-heading.big-words
-          = title
-        p.lead.
+        h2.cover-heading.
           Connecting people to the global swing dance network
     .masthead.clearfix
       .inner
       p.lead
         block content
-    .inner.cover
-      br
-      h2.
-        Site Under Construction
+
+    .box-view
+      .content
+        br
+        .content-header
+          h2.
+            Site Under Construction
+        p.
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+
+
+
+    .foot
   .mastfoot#hideable-footer
     p.
       A networking tool to connect organizers and dancers worldwide

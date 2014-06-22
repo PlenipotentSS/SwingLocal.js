@@ -65,12 +65,10 @@ body {
 .overlay {
   background-color: rgba(0,0,0,0.2);
   color: #fff;
+  width: 100%;
+  top: 0px;
   position:absolute;
   left: 0px;
-  top: 0px;
-  max-height:inherit;
-  width: 100%;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 
@@ -132,6 +130,26 @@ body {
   font-weight: bold;
 }
 
+.content, .content-header {
+  text-align: left;
+}
+
+.content-header {
+  padding: 0px  20px;
+}
+
+.box-view {
+  padding: 0px 20px 20px 20px;
+  text-shadow: none;
+  margin-top: 20px;
+  background-color:#fff;
+  width: 100%;
+
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  overflow: hidden;
+}
 
 /*
  * Footer
@@ -153,9 +171,28 @@ body {
   margin: 0px -15px;
 }
 
+.foot {
+  height: 50px;
+}
+
+/*
+ * image layers
+ */
+
+.highlight-image {
+  margin: 0 auto;
+  max-width:  1000px;
+}
+
+.highlight-image-wrapper {
+  max-height: 400px;
+  overflow: hidden;
+}
+
 /*
  * Affix and center
  */
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
@@ -165,6 +202,23 @@ only screen and (max-width: 420px ) {
   .dashboard-mastfoot {
     position: fixed;
     bottom: 0;
+  }
+
+  .highlight-image {
+    width:  300px;
+  }
+
+  .highlight-image-wrapper {
+    max-height: 200px;
+    overflow: hidden;
+  }
+
+  .overlay .cover-heading{
+    font-size: 20px;
+  }
+
+  .slider-view {
+    max-height: 300px;
   }
 }
 
@@ -178,6 +232,19 @@ and (min-width: 420px ) and (max-width: 768px) {
   .dashboard-mastfoot {
     position: fixed;
     bottom: 0;
+  }
+
+  .highlight-image {
+    width:  400px;
+  }
+
+  .highlight-image-wrapper {
+    max-height: 200px;
+    overflow: hidden;
+  }
+
+  .slider-view {
+    max-height: 400px;
   }
 
   .masthead,
@@ -206,6 +273,17 @@ and (min-width: 768px) {
     position: fixed;
     top: 0;
   }
+
+  .highlight-image {
+    margin: 0 auto;
+    max-width:  700px;
+  }
+
+  .highlight-image-wrapper {
+    max-height: 400px;
+    overflow: hidden;
+  }
+
   .mastfoot,
   .dashboard-mastfoot {
     width: 100%;
