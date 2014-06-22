@@ -4,13 +4,13 @@ block main
   .cover-container
     .hero-container
       img(src="images/30H.jpg",style="max-width:100%;")
+      .overlay.cover
+        h1.cover-heading.big-words
+          = title
+        p.lead.
+          Connecting people to the global swing dance network
     .masthead.clearfix
       .inner
-    .overlay.cover
-      h1.cover-heading.big-words
-        = title
-      p.lead.
-        Connecting people to the global swing dance network
       p.lead
         block content
     .inner.cover
