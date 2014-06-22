@@ -103,12 +103,12 @@ body {
   background-color: transparent;
   border-bottom-color: rgba(255,255,255,.25);
 }
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: rgba(229,228,202,1);
-  border-bottom-color: rgba(229,228,202,1);
-}
+// .masthead-nav > .active > a,
+// .masthead-nav > .active > a:hover,
+// .masthead-nav > .active > a:focus {
+//   color: rgba(229,228,202,1);
+//   border-bottom-color: rgba(229,228,202,1);
+// }
 
 @media (min-width: 768px) {
   .masthead-brand {
