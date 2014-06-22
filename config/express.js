@@ -9,6 +9,8 @@ var express = require('express')
   , winston = require('winston')
   , helpers = require('view-helpers')
   , pkg = require('../package.json')
+  , sass = require('node-sass')
+  , path = require('path')
 
 var env = process.env.NODE_ENV || 'development'
 
@@ -23,6 +25,13 @@ module.exports = function (app, config, passport) {
     },
     level: 9
   }))
+
+  app.use(sass.middleware({
+    src: config.root +  '/public/sass',
+    dest: config.root + '/public',
+    debug: true,
+    outputStyle: 'compressed'
+  }));
 
   app.use(express.favicon())
   app.use(express.static(config.root + '/public'))

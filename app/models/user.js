@@ -13,6 +13,7 @@ var mongoose = require('mongoose')
 
 var UserSchema = new Schema({
   name: { type: String, default: '' },
+  organization: { type: String, default: '' },
   email: { type: String, default: '' },
   username: { type: String, default: '' },
   provider: { type: String, default: '' },

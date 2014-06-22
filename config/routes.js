@@ -37,6 +37,12 @@ module.exports = function (app, passport) {
       failureFlash: 'Invalid email or password.'
     }), users.session)
   app.get('/users/:userId', users.show)
+  app.get('/dashboard/:userId', users.show)
+  app.get('/dashboard/:userId/profile', users.show)
+  app.get('/dashboard/:userId/calendars', users.show)
+  app.get('/dashboard/:userId/errors', users.show)
+  app.get('/dashboard/:userId/media', users.show)
+
   app.get('/auth/facebook',
     passport.authenticate('facebook', {
       scope: [ 'email', 'user_about_me'],

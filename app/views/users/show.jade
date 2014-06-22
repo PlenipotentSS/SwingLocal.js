@@ -1,5 +1,11 @@
-extends ../layouts/default
+extends ../layouts/dashboard
 
 block main
-  - var name = user.name ? user.name : user.username
-  h1= name
+  include ../includes/dashboard/dashboard-side-nav
+  .dashboard-content-container
+    - var name = user.name ? user.name : user.username
+    h1= name
+    hr
+  .dashboard-mastfoot
+    p.
+      A networking tool to connect organizers and dancers worldwide

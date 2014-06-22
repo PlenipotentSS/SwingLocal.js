@@ -32,7 +32,8 @@
     "notifier": "latest",
     "async": "latest",
     "view-helpers": "latest",
-    "forever": "latest"
+    "forever": "latest",
+    "node-sass": "latest"
   },
   "devDependencies": {
     "supertest": "latest",

@@ -1,5 +1,5 @@
 nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
-  .container
+  .navigation-wrapper
     .navbar-header(style="width: 100%;")
       button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
         span.sr-only Toggle navigation
@@ -9,13 +9,13 @@ nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
       a.navbar-brand(href='/') Swing Local
       .collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right
-          li(class=isActive('/') ? 'active' : '')
+          li.nav-item(class=isActive('/'))
             a(href="/", title="Swing Local Home") Home
           - if (req.isAuthenticated())
-            li
-              a(href="/users/"+req.user.id, title="Profile") Profile
-            li
+            li.nav-item(class=isActive('/dashboard'))
+              a(href="/dashboard/"+req.user.id+"/profile", title="Profile") Profile
+            li.nav-item
               a(href="/logout", title="logout") Logout
           - else
-            li(class=isActive('/login') ? 'active' : '')
+            li.nav-item(class=isActive('/login') ? 'active' : '')
               a(href="/login", title="Login") Login
