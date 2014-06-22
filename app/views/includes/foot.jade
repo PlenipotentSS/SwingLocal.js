@@ -13,4 +13,13 @@ script.
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+  setTimeout(function() {
+    $('#hideable-footer').animate({
+        opacity: 0.25,
+        bottom: "-=50",
+        height: "toggle"
+      }, 2000, function() {
+      $('#hideable-footer').remove();
+      });
+  }, 1000);
 block foot
