@@ -157,7 +157,8 @@ body {
  * Affix and center
  */
 
-@media (max-width: 420px ) {
+@media only screen
+and (max-width: 420px ) {
   .mastfoot,
   .dashboard-mastfoot {
     position: fixed;
@@ -166,7 +167,8 @@ body {
   }
 }
 
-@media (min-width: 420px ) and (max-width: 768px) {
+@media only screen
+and (min-width: 420px ) and (max-width: 768px) {
   .masthead {
     position: fixed;
     top: 0;
@@ -197,7 +199,8 @@ body {
   }
 }
 
-@media (min-width: 768px) {
+@media only screen
+and (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
@@ -223,7 +226,8 @@ body {
   }
 }
 
-@media (min-width: 992px) {
+@media only screen
+and (min-width: 992px) {
   .masthead-nav {
     min-width: 700px;
   }

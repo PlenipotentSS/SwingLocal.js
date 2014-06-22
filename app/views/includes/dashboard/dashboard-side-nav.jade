@@ -1,0 +1,14 @@
+.dashboard-side-nav
+  .dashboard-side-logo
+    <img>
+  .dashboard-side-links
+    .dashboard-links-container
+      ul
+        li(class=isActive('/profile'))
+          a(href= "/dashboard/"+user.id+"/profile") Profile
+        li(class=isActive('/calendars'))
+          a(href= "/dashboard/"+user.id+"/calendars") Calendars
+        li(class=isActive('/errors'))
+          a(href= "/dashboard/"+user.id+"/errors") Errors
+        li(class=isActive('/media'))
+          a(href= "/dashboard/"+user.id+"/media") Media
