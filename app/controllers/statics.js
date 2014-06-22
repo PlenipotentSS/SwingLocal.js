@@ -11,7 +11,16 @@ var mongoose = require('mongoose')
  *  Show Index
  */
 exports.index = function (req, res) {
-  res.render('home/index', {
-    title: "Swing Local!",
+  res.render('statics/index', {
+    title: "Swing Local!"
   })
 }
+
+/**
+ *  Show The App
+ */
+ exports.theApp = function (req, res) {
+  res.render('statics/the_app', {
+    title: "The App!"
+  })
+ }

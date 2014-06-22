@@ -11,7 +11,7 @@ var async = require('async')
 var users = require('../app/controllers/users')
   , auth = require('./middlewares/authorization')
 
-var home = require('../app/controllers/home')
+var statics = require('../app/controllers/statics')
 
 /**
  * Route middlewares
@@ -94,5 +94,6 @@ module.exports = function (app, passport) {
 
   app.param('userId', users.user)
 
-  app.get('/', home.index)
+  app.get('/', statics.index)
+  app.get('/the-app', statics.theApp)
 }
