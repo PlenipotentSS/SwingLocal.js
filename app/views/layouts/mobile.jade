@@ -5,13 +5,12 @@ html(lang='en', xmlns='http://www.w3.org/1999/xhtml', xmlns:fb='https://www.face
   link(rel="stylesheet", href="/css/bootstrap-responsive.min.css")
   body
     .site-bg-box
-    .site-wrapper
-      include ../includes/header
-      .alert
-        |  You are checking this out from your mobile device!
+    include ../includes/header
+    .alert
+      |  You are checking this out from your mobile device!
 
-        block main
-      block content
-      .push
+      block main
+    block content
+    .push
     include ../includes/footer
     include ../includes/foot
